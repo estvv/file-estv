@@ -3,7 +3,7 @@ services:
     build:
       context: ./backend
       dockerfile: ../Dockerfile.backend
-    container_name: transfer-backend-estv
+    container_name: file-backend-estv
     expose:
       - "8080"
     networks:
@@ -21,7 +21,7 @@ services:
     build:
       context: ./frontend
       dockerfile: ../Dockerfile.frontend
-    container_name: transfer-frontend-estv
+    container_name: file-frontend-estv
     expose:
       - "80"
     networks:
